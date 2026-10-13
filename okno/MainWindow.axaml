@@ -10,16 +10,20 @@
     <Grid ColumnDefinitions="Auto,*,Auto">
         <DatePicker VerticalAlignment="Center"
                     Margin="16"/>
-        <StackPanel Grid.Column="1"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Spacing="12">
-            <TextBlock Text="Warsztat"
-                       HorizontalAlignment="Center"/>
-            <Button Content="kliknij mnie"
-                    HorizontalAlignment="Center"
-                    Click="OnClickMeClick"/>
-        </StackPanel>
+        <Border Grid.Column="1"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                BorderBrush="Black"
+                BorderThickness="2"
+                Padding="16">
+            <StackPanel Spacing="12">
+                <TextBlock Text="Warsztat"
+                           HorizontalAlignment="Center"/>
+                <Button Content="kliknij mnie"
+                        HorizontalAlignment="Center"
+                        Click="OnClickMeClick"/>
+            </StackPanel>
+        </Border>
         <Calendar Grid.Column="2"
                   VerticalAlignment="Center"
                   Margin="16"
