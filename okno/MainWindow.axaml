@@ -7,8 +7,11 @@
         Title="okno"
         Background="LightBlue"
         WindowState="Maximized">
-    <Grid ColumnDefinitions="*,Auto">
-        <StackPanel HorizontalAlignment="Center"
+    <Grid ColumnDefinitions="Auto,*,Auto">
+        <DatePicker VerticalAlignment="Center"
+                    Margin="16"/>
+        <StackPanel Grid.Column="1"
+                    HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Spacing="12">
             <TextBlock Text="Warsztat"
@@ -17,7 +20,7 @@
                     HorizontalAlignment="Center"
                     Click="OnClickMeClick"/>
         </StackPanel>
-        <Calendar Grid.Column="1"
+        <Calendar Grid.Column="2"
                   VerticalAlignment="Center"
                   Margin="16"
                   Background="White"/>
