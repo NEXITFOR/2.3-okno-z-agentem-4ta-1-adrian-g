@@ -16,6 +16,14 @@
             <MenuItem Header="_Edycja"/>
             <MenuItem Header="P_omoc"/>
         </Menu>
+        <Border DockPanel.Dock="Top"
+                Background="#E3F2FD"
+                BorderBrush="#90CAF9"
+                BorderThickness="0,0,0,1"
+                Padding="16,8">
+            <TextBlock Text="Warsztat — Moja aplikacja!  |  AG"
+                       VerticalAlignment="Center"/>
+        </Border>
         <Grid ColumnDefinitions="Auto,*,Auto">
             <DatePicker VerticalAlignment="Center"
                         Margin="16"/>
