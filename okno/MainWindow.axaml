@@ -18,23 +18,27 @@
         <Grid ColumnDefinitions="Auto,*,Auto">
             <DatePicker VerticalAlignment="Center"
                         Margin="16"/>
-            <Border Grid.Column="1"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    BorderBrush="Black"
-                    BorderThickness="2"
-                    Padding="16"
-                    Background="Yellow">
-                <StackPanel Spacing="12">
-                    <TextBlock Text="Warsztat"
-                               HorizontalAlignment="Center"/>
-                    <Button Content="kliknij mnie"
-                            HorizontalAlignment="Center"
-                            Click="OnClickMeClick"/>
-                    <CheckBox Content="Nie jestem robotem"
-                              HorizontalAlignment="Center"/>
-                </StackPanel>
-            </Border>
+            <StackPanel Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Spacing="12">
+                <Border BorderBrush="Black"
+                        BorderThickness="2"
+                        Padding="16"
+                        Background="Yellow">
+                    <StackPanel Spacing="12">
+                        <TextBlock Text="Warsztat"
+                                   HorizontalAlignment="Center"/>
+                        <Button Content="kliknij mnie"
+                                HorizontalAlignment="Center"
+                                Click="OnClickMeClick"/>
+                        <CheckBox Content="Nie jestem robotem"
+                                  HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+                <TextBox Width="220"
+                         Watermark="Wpisz tekst..."/>
+            </StackPanel>
             <Calendar Grid.Column="2"
                       VerticalAlignment="Center"
                       Margin="16"
