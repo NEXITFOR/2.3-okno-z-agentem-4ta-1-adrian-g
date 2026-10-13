@@ -7,6 +7,7 @@
         Title="Moja aplikacja!"
         Background="LightBlue"
         WindowState="Maximized">
+    <Grid>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="_Plik">
@@ -45,4 +46,13 @@
                       Background="White"/>
         </Grid>
     </DockPanel>
+        <TextBlock Text="AG"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   Margin="0,0,24,16"
+                   FontSize="48"
+                   FontWeight="Bold"
+                   Opacity="0.35"
+                   IsHitTestVisible="False"/>
+    </Grid>
 </Window>
