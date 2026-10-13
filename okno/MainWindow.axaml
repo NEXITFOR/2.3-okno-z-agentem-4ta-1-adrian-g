@@ -7,29 +7,38 @@
         Title="Moja aplikacja!"
         Background="LightBlue"
         WindowState="Maximized">
-    <Grid ColumnDefinitions="Auto,*,Auto">
-        <DatePicker VerticalAlignment="Center"
-                    Margin="16"/>
-        <Border Grid.Column="1"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                BorderBrush="Black"
-                BorderThickness="2"
-                Padding="16"
-                Background="Yellow">
-            <StackPanel Spacing="12">
-                <TextBlock Text="Warsztat"
-                           HorizontalAlignment="Center"/>
-                <Button Content="kliknij mnie"
-                        HorizontalAlignment="Center"
-                        Click="OnClickMeClick"/>
-                <CheckBox Content="Nie jestem robotem"
-                          HorizontalAlignment="Center"/>
-            </StackPanel>
-        </Border>
-        <Calendar Grid.Column="2"
-                  VerticalAlignment="Center"
-                  Margin="16"
-                  Background="White"/>
-    </Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Plik">
+                <MenuItem Header="_Zakończ" Click="OnExitClick"/>
+            </MenuItem>
+            <MenuItem Header="_Edycja"/>
+            <MenuItem Header="P_omoc"/>
+        </Menu>
+        <Grid ColumnDefinitions="Auto,*,Auto">
+            <DatePicker VerticalAlignment="Center"
+                        Margin="16"/>
+            <Border Grid.Column="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    Padding="16"
+                    Background="Yellow">
+                <StackPanel Spacing="12">
+                    <TextBlock Text="Warsztat"
+                               HorizontalAlignment="Center"/>
+                    <Button Content="kliknij mnie"
+                            HorizontalAlignment="Center"
+                            Click="OnClickMeClick"/>
+                    <CheckBox Content="Nie jestem robotem"
+                              HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+            <Calendar Grid.Column="2"
+                      VerticalAlignment="Center"
+                      Margin="16"
+                      Background="White"/>
+        </Grid>
+    </DockPanel>
 </Window>
