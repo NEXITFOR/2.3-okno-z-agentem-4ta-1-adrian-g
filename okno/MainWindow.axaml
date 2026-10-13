@@ -15,7 +15,8 @@
                 VerticalAlignment="Center"
                 BorderBrush="Black"
                 BorderThickness="2"
-                Padding="16">
+                Padding="16"
+                Background="Yellow">
             <StackPanel Spacing="12">
                 <TextBlock Text="Warsztat"
                            HorizontalAlignment="Center"/>
