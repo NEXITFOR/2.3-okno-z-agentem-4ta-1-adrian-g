@@ -7,13 +7,19 @@
         Title="okno"
         Background="LightBlue"
         WindowState="Maximized">
-    <StackPanel HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                Spacing="12">
-        <TextBlock Text="Warsztat"
-                   HorizontalAlignment="Center"/>
-        <Button Content="kliknij mnie"
-                HorizontalAlignment="Center"
-                Click="OnClickMeClick"/>
-    </StackPanel>
+    <Grid ColumnDefinitions="*,Auto">
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Spacing="12">
+            <TextBlock Text="Warsztat"
+                       HorizontalAlignment="Center"/>
+            <Button Content="kliknij mnie"
+                    HorizontalAlignment="Center"
+                    Click="OnClickMeClick"/>
+        </StackPanel>
+        <Calendar Grid.Column="1"
+                  VerticalAlignment="Center"
+                  Margin="16"
+                  Background="White"/>
+    </Grid>
 </Window>
