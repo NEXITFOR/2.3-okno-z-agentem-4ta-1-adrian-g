@@ -13,6 +13,7 @@
         <TextBlock Text="Warsztat"
                    HorizontalAlignment="Center"/>
         <Button Content="kliknij mnie"
-                HorizontalAlignment="Center"/>
+                HorizontalAlignment="Center"
+                Click="OnClickMeClick"/>
     </StackPanel>
 </Window>
