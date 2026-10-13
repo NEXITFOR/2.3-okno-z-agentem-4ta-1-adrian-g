@@ -21,4 +21,9 @@ public partial class MainWindow : Window
 
         Background = new SolidColorBrush(color);
     }
+
+    private void OnExitClick(object? sender, RoutedEventArgs e)
+    {
+        Close();
+    }
 }
