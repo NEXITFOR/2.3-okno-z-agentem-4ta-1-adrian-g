@@ -23,6 +23,8 @@
                 <Button Content="kliknij mnie"
                         HorizontalAlignment="Center"
                         Click="OnClickMeClick"/>
+                <CheckBox Content="Nie jestem robotem"
+                          HorizontalAlignment="Center"/>
             </StackPanel>
         </Border>
         <Calendar Grid.Column="2"
